@@ -6,9 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 @Entity
-public class Equipo {
+public class Equipo implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
